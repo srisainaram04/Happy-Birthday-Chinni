@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Chinni 💗</title>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Caveat:wght@600&family=Nunito:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#3d2757;--bg:#ffc2dd;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html,body{height:100%;margin:0}
+body{font-family:Nunito,system-ui,sans-serif;color:var(--ink);background:var(--bg);transition:background .6s;overflow:hidden}
+h1,h2,.d{font-family:'Bagel Fat One',Georgia,sans-serif;font-weight:400;line-height:1.05;margin:0}
+.hand{font-family:Caveat,cursive;font-size:1.5rem}
+#app{height:100dvh;max-width:780px;margin:0 auto;position:relative;display:flex;flex-direction:column}
+#bars{display:flex;gap:4px;padding:12px 14px 0}#bars i{flex:1;height:4px;border-radius:4px;background:#3d275733;overflow:hidden}#bars i.on{background:var(--ink)}
+#snd{position:absolute;top:calc(26px + env(safe-area-inset-top,0px));right:14px;z-index:5;background:#fff9;color:var(--ink);box-shadow:none;padding:8px 14px;font-size:.9rem}
+#stage{scrollbar-width:none;flex:1;min-height:0;overflow:auto;overflow-anchor:none;padding:46px 22px 12px;display:flex;flex-direction:column;justify-content:flex-start;text-align:center;position:relative}
+.slide{animation:in .5s both}@keyframes in{from{opacity:0;transform:translateX(30px)}}
+#nav{display:flex;justify-content:space-between;align-items:center;padding:10px 18px 18px}
+button{font:inherit;font-weight:700;cursor:pointer;border:0;border-radius:999px;padding:13px 26px;color:#fff;background:var(--ink);transition:transform .15s}
+button:hover{transform:scale(1.05)}button:disabled{opacity:.35;cursor:default;transform:none}
+button:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.round{width:48px;height:48px;padding:0;font-size:1.3rem}
+.pop{opacity:0;animation:pop .6s forwards}@keyframes pop{from{transform:scale(.6) translateY(20px)}to{opacity:1;transform:none}}
+.big{font-size:clamp(3rem,16vw,5.5rem)}.sm{font-size:1.05rem;opacity:.85}
+.gift{font-size:7rem;display:inline-block;animation:wob 1.6s ease-in-out infinite}@keyframes wob{25%{transform:rotate(-8deg)}75%{transform:rotate(8deg)}}
+.stat{margin:14px 0}.stat .d{font-size:clamp(3rem,15vw,4.8rem)}
+.bar{background:#fff8;border-radius:99px;height:26px;overflow:hidden;margin:6px 0 18px}.bar b{display:block;height:100%;width:0;background:var(--ink);border-radius:99px;transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.row{display:flex;justify-content:space-between;font-weight:700;text-align:left}
+.paper{background:#fffdf5;border-radius:18px;padding:22px;text-align:left;box-shadow:0 10px 30px #3d275722;font-size:1.05rem;line-height:1.6;min-height:260px;transform:rotate(-1deg)}
+.car{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:20px 8px;margin:0 -22px}
+.pol{flex:0 0 74%;scroll-snap-align:center;background:#fff;padding:12px 12px 16px;border-radius:6px;box-shadow:0 10px 24px #3d275733;transform:rotate(var(--r))}
+.pol img{width:100%;aspect-ratio:1;object-fit:cover;display:block;border-radius:3px}.pol label{cursor:pointer;display:block}
+.sky{position:relative;height:250px;background:#3d2757;border-radius:24px;overflow:hidden;margin:16px 0}
+.star{position:absolute;font-size:2rem;background:none;padding:6px;color:#fff6a8;box-shadow:none;animation:tw 2s infinite alternate}
+.star.lit{color:#ff8fbd;animation:none;transform:scale(1.5)}@keyframes tw{to{opacity:.4;transform:scale(.8)}}
+.reasons{min-height:90px}.reasons p{margin:6px 0;animation:in .4s both;font-weight:700}
+.opt{display:block;width:100%;margin:8px 0;background:#fffb;color:var(--ink);text-align:left}.opt.ok{background:#fff;outline:3px solid var(--ink)}
+.tcard{width:min(300px,82vw);margin:8px auto;perspective:700px}
+.tc{border-radius:22px;padding:14px;color:#2d1b45;background:linear-gradient(115deg,#ffd0e3,#e3d6ff 35%,#cfeaff 55%,#fff1c9 80%);background-size:250% 250%;background-position:var(--mx,50%) var(--my,50%);border:6px solid #ffe08a;box-shadow:0 18px 40px #3d275744;transform:rotateX(var(--rx,0)) rotateY(var(--ry,0));transition:transform .1s;text-align:left;position:relative;overflow:hidden}
+.tc::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,#fff9 50%,transparent 65%);background-size:250% 100%;background-position:var(--mx,50%) 0;mix-blend-mode:overlay;pointer-events:none}
+.tc .face{background:#fff8;border-radius:14px;text-align:center;font-size:4.2rem;padding:16px 0;margin:8px 0}
+.tc .atk{display:flex;justify-content:space-between;font-weight:700;font-size:.95rem;margin-top:6px}
+.tc small{display:block;margin-top:8px;font-size:.78rem}
+.cake{position:relative;width:200px;margin:8px auto}
+.candles{display:flex;justify-content:center;gap:20px;height:64px;align-items:flex-end}
+.candle{width:11px;height:34px;background:repeating-linear-gradient(45deg,#fff,#fff 6px,#ff9ec4 6px,#ff9ec4 12px);border-radius:4px;position:relative}
+.flame{position:absolute;top:-22px;left:-3px;width:16px;height:22px;background:radial-gradient(#fff6a8,#ffb347);border-radius:50% 50% 50% 50%/60% 60% 40% 40%;animation:fl .4s infinite alternate;transition:all .4s}@keyframes fl{to{transform:scale(1.15,.9) rotate(4deg)}}
+.out .flame{opacity:0;transform:scale(0);animation:none}
+.ly{height:44px;border-radius:12px;margin-top:-4px}.a{background:#fff;width:140px;margin-inline:auto}.b{background:#e3d6ff;width:175px;margin-inline:auto}.c{background:#ff9ec4;width:200px}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:50}
+.wish{background:#fffdf5;border-radius:18px;padding:18px;margin-top:14px;animation:pop .7s forwards;opacity:0}
+.hidden{display:none!important}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;transition:none!important}.pop,.wish{opacity:1}}
+#stage::-webkit-scrollbar{display:none}
+#stage>.slide{width:100%;max-width:640px;margin:auto}
+@media(min-width:900px){
+body{font-size:1.15rem}#stage{padding:56px 40px 16px}
+.big{font-size:5.6rem}.paper{font-size:1.2rem;padding:30px}.sm{font-size:1.15rem}
+.pol{flex:0 0 330px}.car{justify-content:safe center}.sky{height:330px}
+.cake{transform:scale(1.15);margin:22px auto}h2{font-size:2.6rem}
+}
+</style></head>
+<body>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<div id="app">
+  <div id="bars" aria-hidden="true"></div>
+  <button id="snd" aria-pressed="false">🔇 Music off</button>
+  <div id="stage" aria-live="polite"></div>
+  <div id="nav"><button class="round" id="prev" aria-label="Previous">‹</button><span id="hint" class="sm">swipe, tap or use ← →</span><button class="round" id="next" aria-label="Next">›</button></div>
+</div>
+<script>
+/* ============ EDIT ME ============ */
+const C={
+ her:"Vanii", me:"Sri Sai", date:"24 October",
+ memory:"[ADD A MEMORY]", joke:"[ADD A FUNNY JOKE]", personal:"[ADD YOUR OWN MESSAGE]",
+ letter:[
+  "Hey {her}, happy birthday! 🎂",
+  "I don't even know where to start  You know, the day I dropped you at the railway station, naku chala badha anipinchindi. But more than that, I was scared. I don't know why, but in my life, so many people came and went like passing clouds. After some time, I lost touch with almost everyone, and eventually, we became strangers again. I don't want that to happen with you. ",
+  "You know I'm an introvert, and I'm not  good at chatting. Sometimes I just text you “Hi” randomly. It's not that I always expect a reply or want to start a conversation. I just want to stay in touch with you in my own little way.  Honestly, I don't even know how to maintain friendships properly. If someone doesn't talk to me for a few days, I feel like strangers But with you, I don't want to let that happen. I don't want us to slowly stop talking and become strangers like I've become with so many others.",
+  "And please, if you're ever busy, don't feel like you have to reply to my messages. Just ignore them if you can't reply. I won't mind. I don't want my messages to feel like a responsibility for you. I just want us to stay in touch, even if it's just a random Hi once in a while. ❤️🫂","You know what? You're the first girl in my life with whom I've shared so many first-time memories. The first friend I took on my bike, my first selfie with a friend like you, and my first time going to a restaurant alone with a friend. Maybe these things seem normal to you, but for me, they're really special. These are the little things I'll remember for a long time.  And that's why you'll always be special to me, no matter what.","I don't know what the future holds for us or how busy our lives will become. Maybe we'll meet less often, maybe we'll get busy with our own lives, but I really hope we never lose this bond. I don't want you to become just another person I used to know and have memories with. I want you to remain a part of my life, even when life changes.","I'm not someone who expresses feelings properly, and I might not always know how to show that I care. But that doesn't mean people aren't important to me. And you are one of those people I genuinely don't want to lose","Anyway, enough of my story  It's your birthday, and I just wanted you to know how special you are to me. I'm really happy that you came into my life, and I'm grateful for every little memory we've made together.","Happy Birthday, Chinni! 🎂💗🫂I hope you always stay happy and get everything you wish for.  Neeku nachina vallu Bigg Boss winner avvali , nee labs anni complete aipovali, joining kuda thondaraga ravali, and manam kalisi oka manchi trip ki vellali . Inka nee life lo anni manchi things jaragali ani korukuntunna. No matter how much life changes or how busy we become, I really hope manam eppatiki strangers aipokudadhu."],
+ photos:[{img:"images/photo1.jpeg",cap:"Our First Picture Together 😂"},{img:"images/photo2.jpeg",cap:"Our random moments 🫂"},{img:"images/photo3.jpeg",cap:"A Memory I'll Always Keep💖"}],
+};
+/* ================================= */
+const $=s=>document.querySelector(s),f=t=>t.replace(/{her}/g,C.her).replace(/{me}/g,C.me).replace(/{memory}/g,C.memory).replace(/{joke}/g,C.joke).replace(/{personal}/g,C.personal);
+const e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+/* confetti */
+const cv=$('#confetti'),cx=cv.getContext('2d');let P=[],raf;
+const fit=()=>{cv.width=innerWidth;cv.height=innerHeight};fit();addEventListener('resize',fit);
+function confetti(n=150){if(reduce)return;const k=['#ff8fbd','#c9b6ff','#ffd166','#fff','#a88bf5'];
+for(let i=0;i<n;i++)P.push({x:innerWidth/2,y:innerHeight*.65,vx:(Math.random()-.5)*16,vy:-Math.random()*17-4,s:5+Math.random()*7,c:k[i%5],r:0,vr:(Math.random()-.5)*.4,l:140+Math.random()*60});
+cancelAnimationFrame(raf);(function lp(){cx.clearRect(0,0,cv.width,cv.height);P=P.filter(p=>p.l-->0);
+P.forEach(p=>{p.vy+=.3;p.x+=p.vx;p.y+=p.vy;p.r+=p.vr;cx.save();cx.translate(p.x,p.y);cx.rotate(p.r);cx.fillStyle=p.c;cx.fillRect(-p.s/2,-p.s/2,p.s,p.s*.6);cx.restore()});
+if(P.length)raf=requestAnimationFrame(lp)})()}
+/* music: provided audio file, off by default */
+const music=new Audio('audio/audio.mp3');music.loop=true;
+$('#snd').onclick=async ev=>{const b=ev.currentTarget;
+if(!music.paused){music.pause();b.textContent='🔇 Music off';b.setAttribute('aria-pressed','false');return}
+try{await music.play();b.textContent='🎵 Music on';b.setAttribute('aria-pressed','true')}
+catch(error){console.error('Unable to play audio/audio.mp3',error);b.textContent='⚠️ Audio unavailable';b.setAttribute('aria-pressed','false')}};
+/* slides: [background, builder(el)] */
+const L=(t,d)=>`<div class="pop" style="animation-delay:${d}s">${t}</div>`;
+const S=[
+["#ffc2dd",el=>{el.innerHTML=L('<div class="gift">🎁</div>',0)+L('<h1 class="big">Hey Vanii! 🎁</h1>',.2)+L('<p class="sm">I made this little surprise just for you!</p>',.4)+L('<p class="hand">'+e(C.her)+' 🎂 '+e(C.date)+'</p>',.6)+L('<button id="go">Open Your Surprise ✨</button>',.8);$('#go').onclick=()=>{confetti(120);go(1)}}],
+["#fff1d6",el=>{el.innerHTML=L('<h1 style="font-size:clamp(2rem,10vw,3.4rem)">HAPPY BIRTHDAY, Vanii! 💗</h1>',0)+'<div class="cake" id="ck"><div class="candles">'+'<div class="candle"><div class="flame"></div></div>'.repeat(5)+'</div><div class="ly a"></div><div class="ly b"></div><div class="ly c"></div></div><button id="bl">Blow out the candles 🕯️</button>';
+$('#bl').onclick=()=>{$('#ck').classList.add('out');confetti(100);$('#bl').textContent='Continue →';$('#bl').onclick=()=>go(cur+1)}}],
+["#e6dcff",el=>{el.innerHTML='<h2>Our memories 📸</h2><p class="sm">Even the simplest moments with you turn into my favorite memories. 💗✨</p><div class="car">'+C.photos.map((p,i)=>`<figure class="pol" style="--r:${[-3,2,-2][i%3]}deg;margin:0"><img src="${e(p.img)}" alt="Memory ${i+1}: ${e(p.cap)}"><p class="hand" style="margin:8px 0 0">${e(p.cap)}</p></figure>`).join('')+'</div>'}],
+["#ffd6e8",el=>{el.innerHTML='<h2 style="margin-bottom:14px">A message for you 💌</h2><div class="paper"><span id="tx"></span></div><p class="sm" style="margin-top:10px">tap the letter to skip typing</p>';
+const full=C.letter.map(f).join('\n\n'),tx=$('#tx');let i=0,id=setInterval(()=>{tx.textContent=full.slice(0,++i);tx.style.whiteSpace='pre-wrap';if(i>=full.length)clearInterval(id)},reduce?1:28);
+el.querySelector('.paper').onclick=()=>{clearInterval(id);tx.textContent=full};el._off=()=>clearInterval(id)}],
+];
+/* engine */
+let cur=0;const st=$('#stage');
+$('#bars').innerHTML=S.map(()=>'<i></i>').join('');
+function go(i){if(i<0||i>=S.length)return;if(st._off)st._off();cur=i;document.documentElement.style.setProperty('--bg',S[i][0]);
+document.querySelectorAll('#bars i').forEach((b,k)=>b.classList.toggle('on',k<=i));
+st.innerHTML='';const d=document.createElement('div');d.className='slide';st.appendChild(d);st.scrollTop=0;S[i][1](d);st._off=d._off;
+$('#prev').disabled=i==0;$('#next').disabled=i==S.length-1;$('#hint').textContent=i==0?'tap the button ✨':(i==S.length-1?'The End 💗':'swipe, tap or use ← →')}
+$('#next').onclick=()=>go(cur+1);$('#prev').onclick=()=>go(cur-1);
+addEventListener('keydown',k=>{if(k.key=='ArrowRight')go(cur+1);if(k.key=='ArrowLeft')go(cur-1)});
+let sx=null;st.addEventListener('touchstart',t=>sx=t.touches[0].clientX,{passive:true});
+st.addEventListener('touchend',t=>{if(sx===null)return;const dx=t.changedTouches[0].clientX-sx;sx=null;if(t.target.closest('.car,.tc'))return;if(Math.abs(dx)>70)go(cur+(dx<0?1:-1))});
+go(0);
+</script></body></html>
